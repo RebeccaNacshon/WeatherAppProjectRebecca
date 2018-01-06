@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         - This Guideline divides the screen into a left half and a right half and is used to        -
+         - anchor the views to the middle of the screen.                                             -
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         - Today's date                                                                              -
+         -                                                                                           -
+         - You may notice that the line android:fontFamily="sans-serif" is highlighted in yellow.    -
+         - The reason for the highlighted line is that the fontFamily attribute is not available on  -
+         - versions of Android before 16, and our minimum supported version of Android is 10. This   -
+         - particular issue won't break the app, but you should note that this attribute will be     -
+         - ignored on devices that run an Android version less than 16.                              -
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:text="Today, April 03"/>
+<!--
+
+        <ImageView
+            android:id="@+id/weather_icon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            tools:src="@drawable/art_clouds"/>
+-->
+        <!-- Text that describes weather condition -->
+        <TextView
+            android:id="@+id/weather_description"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:text="Rainy"/>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         - High temperature for today                                                                -
+         -                                                                                           -
+         - You may notice that the line android:fontFamily="sans-serif" is highlighted in yellow.    -
+         - The reason for the highlighted line is that the fontFamily attribute is not available on  -
+         - versions of Android before 16, and our minimum supported version of Android is 10. This   -
+         - particular issue won't break the app, but you should note that this attribute will be     -
+         - ignored on devices that run an Android version less than 16.                              -
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <TextView
+            android:id="@+id/high_temperature"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/white"
+            android:textSize="72sp"
+            tools:text="19\u00b0"/>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         - Low temperature for today                                                                 -
+         -                                                                                           -
+         - You may notice that the line android:fontFamily="sans-serif" is highlighted in yellow.    -
+         - The reason for the highlighted line is that the fontFamily attribute is not available on  -
+         - versions of Android before 16, and our minimum supported version of Android is 10. This   -
+         - particular issue won't break the app, but you should note that this attribute will be     -
+         - ignored on devices that run an Android version less than 16.                              -
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <TextView
+            android:id="@+id/low_temperature"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            tools:text="10\u00b0"/>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="day_of_week" type="id" />
+    <item name="weather_result" type="id" />
+    <item name="weather_result_small" type="id" />
+</resources>
